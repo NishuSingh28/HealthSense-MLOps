@@ -9,6 +9,3 @@ mlruns/
 .ipynb_checkpoints/
 
 .env
-
-data/raw/
-data/processed/

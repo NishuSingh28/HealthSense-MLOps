@@ -1,0 +1,5 @@
+outs:
+- md5: 30c5afa20cc83b4d95d63593de6381d3
+  size: 263646
+  hash: md5
+  path: obesity.csv
