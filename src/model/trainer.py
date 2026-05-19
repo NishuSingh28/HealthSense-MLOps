@@ -13,6 +13,7 @@ from xgboost import XGBClassifier
 
 from src.utils.logger import logger
 from src.utils.exception import CustomException
+from src.model.evaluation import ModelEvaluation
 
 
 class ModelTrainer:
@@ -64,9 +65,12 @@ class ModelTrainer:
                         X_test
                     )
 
-                    accuracy = accuracy_score(
+                    evaluator = ModelEvaluation()
+
+                    accuracy = evaluator.evaluate_model(
                         y_test,
                         predictions,
+                        model_name,
                     )
 
                     mlflow.log_metric(
