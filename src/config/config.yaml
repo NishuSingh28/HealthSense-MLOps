@@ -1,0 +1,8 @@
+data:
+  raw_data_path: data/raw/obesity.csv
+  train_data_path: data/processed/train.csv
+  test_data_path: data/processed/test.csv
+
+model:
+  random_state: 42
+  test_size: 0.2
